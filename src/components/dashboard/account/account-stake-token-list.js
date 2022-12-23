@@ -6,16 +6,15 @@ import {
   Table,
   TableBody,
   TableCell,
+  TableContainer,
   TableHead,
   TableRow,
   TableSortLabel,
-  Tooltip,
-  Typography
+  Typography,
 } from '@mui/material';
-import {InformationCircleOutlined as InformationCircleOutlinedIcon} from '../../../icons/information-circle-outlined';
-import { Lock as LockIcon } from '../../../icons/lock';
+import {Lock as LockIcon} from '../../../icons/lock';
 import {Skeleton} from "@mui/lab";
-import {asDollarFormat, asNumFormat, withComma} from "../../../utils/number";
+import {asDollarFormat, asNumFormat} from "../../../utils/number";
 
 const sortTokenList = (tokens, order, orderBasis) => tokens
   .sort((a, b) => {
@@ -86,6 +85,7 @@ export const AccountStakeTokenList = (props) => {
         props.stakedLoading ?
           <Skeleton variant="rectangular" width={"100%"} height={100} />
           :
+          <TableContainer>
           <Table>
             <TableHead
               sx={{background:'rgba(255, 255, 255, 0.1)',
@@ -208,6 +208,7 @@ export const AccountStakeTokenList = (props) => {
               ))}
             </TableBody>
           </Table>
+          </TableContainer>
       }
     </Card>
   );

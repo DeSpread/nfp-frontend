@@ -9,7 +9,8 @@ import {
     TableHead,
     TableRow,
     TableSortLabel,
-    Typography
+    Typography,
+    TableContainer
 } from "@mui/material";
 import {Skeleton} from "@mui/lab";
 import {asDollarFormat, asNumFormat} from "../../../utils/number";
@@ -96,6 +97,7 @@ export const AccountVaultTokenList = (props) => {
                 props.vaultLoading ?
                     <Skeleton variant="rectangular" width={"100%"} height={100}/>
                     :
+                    <TableContainer>
                     <Table>
                         <TableHead
                           sx={{background:'rgba(255, 255, 255, 0.1)',
@@ -225,6 +227,7 @@ export const AccountVaultTokenList = (props) => {
                             ))}
                         </TableBody>
                     </Table>
+                    </TableContainer>
             }
         </Card>
     );

@@ -6,13 +6,13 @@ import {
   Table,
   TableBody,
   TableCell,
+  TableContainer,
   TableHead,
   TableRow,
   TableSortLabel,
-  Tooltip,
   Typography
 } from '@mui/material';
-import { ChartBar as ChartBarIcon } from '../../../icons/chart-bar';
+import {ChartBar as ChartBarIcon} from '../../../icons/chart-bar';
 import {Skeleton} from "@mui/lab";
 import {asDollarFormat, asNumFormat} from "../../../utils/number";
 
@@ -85,6 +85,7 @@ export const AccountFarmTokenList = (props) => {
         props.farmLoading ?
           <Skeleton variant="rectangular" width={"100%"} height={100}/>
           :
+          <TableContainer>
           <Table>
             <TableHead
               sx={{background:'rgba(255, 255, 255, 0.1)',
@@ -195,6 +196,7 @@ export const AccountFarmTokenList = (props) => {
               ))}
             </TableBody>
           </Table>
+          </TableContainer>
       }
     </Card>
   );

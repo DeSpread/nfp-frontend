@@ -125,7 +125,8 @@ export const StackingActivities = (props) => {
           <Box sx={{display: "flex", width: "100%", justifyContent: "center", height: "30vh", overflow: "auto"}}>
             <Table>
               <TableHead
-                sx={{background:'rgba(255, 255, 255, 0.1)',
+                sx={{
+                  background:'rgba(255, 255, 255, 0.1)',
                   borderColor: '#54576a',
                   borderWidth: 1,
                   borderStyle: 'solid',
@@ -152,7 +153,15 @@ export const StackingActivities = (props) => {
           :
           <Box sx={{display: "flex", width: "100%", justifyContent: "center", maxHeight: "30vh", overflow: "auto"}}>
             <Table>
-              <TableHead>
+              <TableHead
+                sx={{
+                  background:'rgba(255, 255, 255, 0.1)',
+                  borderColor: '#54576a',
+                  borderWidth: 1,
+                  borderStyle: 'solid',
+                  mt: 4
+                }}
+              >
                 <TableCell sx={{textAlign: "center"}}><Box color={"white"}>Cycle</Box></TableCell>
                 <TableCell sx={{textAlign: "center"}}><Box color={"white"}>Delegate Amount</Box></TableCell>
                 <TableCell sx={{textAlign: "center"}}><Box color={"white"}>Status</Box></TableCell>

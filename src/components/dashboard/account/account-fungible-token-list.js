@@ -1,15 +1,12 @@
 import {useState} from 'react';
-import numeral from 'numeral';
 import {
   Box,
-  Button,
   Card,
-  CardActions,
   CardHeader,
-  Divider, IconButton,
   Table,
   TableBody,
   TableCell,
+  TableContainer,
   TableHead,
   TableRow,
   TableSortLabel,
@@ -17,7 +14,7 @@ import {
   Typography
 } from '@mui/material';
 import {InformationCircleOutlined as InformationCircleOutlinedIcon} from '../../../icons/information-circle-outlined';
-import { ChartPie as ChartIcon } from '../../../icons/chart-pie';
+import {ChartPie as ChartIcon} from '../../../icons/chart-pie';
 import {Skeleton} from "@mui/lab";
 import {asDollarFormat, asNumFormat} from "../../../utils/number";
 
@@ -96,6 +93,7 @@ export const AccountFungibleTokenList = (props) => {
         props.accountLoading ?
           <Skeleton variant="rectangular" width={"100%"} height={100} />
           :
+          <TableContainer>
           <Table>
             <TableHead
               sx={{background:'rgba(255, 255, 255, 0.1)',
@@ -210,6 +208,7 @@ export const AccountFungibleTokenList = (props) => {
               ))}
             </TableBody>
           </Table>
+          </TableContainer>
       }
     </Card>
   );
