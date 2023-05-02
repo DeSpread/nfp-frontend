@@ -27,7 +27,7 @@ const LogoMark = () => {
         }}
         onClick={
           () => {
-            window.location.href = `/home`;
+            window.location.href = `/projects/stacks`;//home
           }
         }
       />

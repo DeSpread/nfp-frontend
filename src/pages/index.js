@@ -1,2 +1,2 @@
-import Home from "./home"
+import Home from "./projects"
 export default Home

@@ -241,7 +241,7 @@ const LogoMark = ({width=200, marginLeft="4px", marginTop="6px"}) => {
       <img
         onClick={
           () => {
-            window.location.href = `/home`;
+            window.location.href = `/projects/stacks`;
           }
         }
         width={width}
