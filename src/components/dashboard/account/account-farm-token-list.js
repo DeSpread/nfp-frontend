@@ -72,7 +72,7 @@ export const AccountFarmTokenList = (props) => {
   return (
     <Card {...props}
       sx={{background:'rgba(255, 255, 255, 0.1)',
-        borderColor: '#54576a',
+        borderColor: '#373737',
         borderWidth: 1,
         borderStyle: 'solid'
       }}
@@ -89,7 +89,7 @@ export const AccountFarmTokenList = (props) => {
           <Table>
             <TableHead
               sx={{background:'rgba(255, 255, 255, 0.1)',
-                borderColor: '#54576a',
+                borderColor: '#373737',
                 borderWidth: 1,
                 borderStyle: 'solid',
                 mt: 4
@@ -149,8 +149,12 @@ export const AccountFarmTokenList = (props) => {
                   sx={{
                     '&:last-child td': {
                       border: 0
-                    }
+                    },
+                    "&:hover": {
+                      backgroundColor: "#616161 !important"
+                    },
                   }}
+
                 >
                   <TableCell width="25%">
                     <Box

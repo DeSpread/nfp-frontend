@@ -253,8 +253,12 @@ export const DashboardNavbar = (props) => {
     <>
       <Box
         sx={{
-          background: 'linear-gradient(to right bottom, #232a3e, #2c2d5b)',
+          background: '#121212',
+          // background: 'linear-gradient(to right bottom, #232a3e, #2c2d5b)',
           zIndex: 10,
+          borderWidth: 1,
+          borderStyle: 'solid',
+          borderColor: '#373737',
         }}
         {...other}>
         <Toolbar

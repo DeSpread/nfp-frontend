@@ -37,7 +37,8 @@ export const DashboardLayout = (props) => {
             display:'flex',
             flexDirection:'row',
             flex:1,
-            background: 'linear-gradient(to right bottom, #192039, #283779)',
+            background: '#121212'
+            // background: 'linear-gradient(to right bottom, #192039, #283779)',
           }}
         >
           <DashboardSidebar

@@ -44,7 +44,7 @@ export const ProjectChart = ({symbol}) => {
           autoScaleYaxis: true,
         }
       },
-      colors: [theme.palette.primary.main, '#7783DB'],
+      colors: [theme.palette.secondary.dark, '#7783DB'],
       dataLabels: {
         enabled: false
       },

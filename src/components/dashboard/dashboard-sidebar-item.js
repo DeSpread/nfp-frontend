@@ -108,7 +108,7 @@ export const DashboardSidebarItem = (props) => {
           sx={{
             backgroundColor: active && 'rgba(255,255,255, 0.08)',
             borderRadius: 1,
-            color: active ? 'primary.main' : 'neutral.300',
+            color: active ? 'secondary.main' : 'neutral.300',
             fontWeight: active && 'fontWeightBold',
             justifyContent: 'flex-start',
             pl: `${paddingLeft}px`,
@@ -117,7 +117,7 @@ export const DashboardSidebarItem = (props) => {
             textTransform: 'none',
             width: '100%',
             '& .MuiButton-startIcon': {
-              color: active ? 'primary.main' : 'neutral.400'
+              color: active ? 'secondary.main' : 'neutral.400'
             },
             '&:hover': {
               backgroundColor: 'rgba(255,255,255, 0.08)'

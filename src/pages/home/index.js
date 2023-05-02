@@ -292,10 +292,13 @@ const Home = () => {
               <Stack>
                 <Stack direction={"row"}>
                   <Typography
+                    // style={{
+                    //   background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
+                    //   WebkitBackgroundClip: "text",
+                    //   WebkitTextFillColor: "transparent",
+                    // }}
                     style={{
-                      background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
+                      color: "white"
                     }}
                     variant={getMainTitleVariant()}>DeSpread
                   </Typography>
@@ -303,20 +306,25 @@ const Home = () => {
               </Stack>
               <Stack direction={"row"}>
                 <Typography
+                  // style={{
+                  //   background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
+                  //   WebkitBackgroundClip: "text",
+                  //   WebkitTextFillColor: "transparent",
+                  //   marginTop: 0
+                  // }}
                   style={{
-                    background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    marginTop: 0
+                    color: "white"
                   }}
                   variant={getMainTitleVariant()} >Multi-chain Dashboard</Typography>
                 <Typography
+                  // style={{
+                  //   background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
+                  //   WebkitBackgroundClip: "text",
+                  //   WebkitTextFillColor: "transparent",
+                  //   marginLeft: 1,
+                  // }}
                   style={{
-                    // color:"white"
-                    background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    marginLeft: 1,
+                    color: "white"
                   }}
                   variant={getVersionTitleVariant()}>beta
                 </Typography>
@@ -327,26 +335,26 @@ const Home = () => {
               <ChainSelectButton onClick={()=>{
                 window.location.href = `/projects/stacks`;
               }} src={"/static/icons/stx_icon.svg"} chainName={"Stacks"}/>
-              <ChainSelectButton onClick={()=>{
-                window.location.href = `/projects/aptos`;
-              }} src={"/static/icons/aptos_icon.svg"} chainName={"Aptos"}/>
+              {/*<ChainSelectButton onClick={()=>{*/}
+              {/*  window.location.href = `/projects/aptos`;*/}
+              {/*}} src={"/static/icons/aptos_icon.svg"} chainName={"Aptos"}/>*/}
               {/*<ChainSelectButton src={"/static/icons/boba_icon.svg"} chainName={"Boba"} active={false} color={"black"}/>*/}
             </Stack>
-            <Stack direction={"column"} alignItems={"center"} spacing={2} sx={{marginTop: 8}}>
-              <Typography sx={{color: "white"}} variant={"h5"}>
-                Coming Soon
-              </Typography>
-              <Stack direction={"row"} sx={{background:'', flex:1, overflow: 'hidden', maxWidth: getWillSupportLayerWidth()}}>
-                <Track>
-                  {readyForNextIconData.concat(readyForNextIconData).map((e, index) => {
-                    return (
-                      <Box key={index} sx={{paddingLeft: 1, paddingRight: 1}}>
-                        <ChainSelectButton  src={`/static/icons/${e.fileName}`} chainName={e.chainName} active={false} color={e.color}/>
-                      </Box>)
-                  })}
-                </Track>
-              </Stack>
-            </Stack>
+            {/*<Stack direction={"column"} alignItems={"center"} spacing={2} sx={{marginTop: 8}}>*/}
+            {/*  <Typography sx={{color: "white"}} variant={"h5"}>*/}
+            {/*    Coming Soon*/}
+            {/*  </Typography>*/}
+            {/*  <Stack direction={"row"} sx={{background:'', flex:1, overflow: 'hidden', maxWidth: getWillSupportLayerWidth()}}>*/}
+            {/*    <Track>*/}
+            {/*      {readyForNextIconData.concat(readyForNextIconData).map((e, index) => {*/}
+            {/*        return (*/}
+            {/*          <Box key={index} sx={{paddingLeft: 1, paddingRight: 1}}>*/}
+            {/*            <ChainSelectButton  src={`/static/icons/${e.fileName}`} chainName={e.chainName} active={false} color={e.color}/>*/}
+            {/*          </Box>)*/}
+            {/*      })}*/}
+            {/*    </Track>*/}
+            {/*  </Stack>*/}
+            {/*</Stack>*/}
           </Stack>
         </Stack>
         <Stack sx={{flex:1, marginTop: -10}} flexDirection={"column"} alignItems={"center"}>

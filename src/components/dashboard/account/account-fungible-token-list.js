@@ -74,7 +74,7 @@ export const AccountFungibleTokenList = (props) => {
   return (
     <Card {...props}
       sx={{background:'rgba(255, 255, 255, 0.1)',
-        borderColor: '#54576a',
+        borderColor: '#373737',
         borderWidth: 1,
         borderStyle: 'solid'
       }}
@@ -97,7 +97,7 @@ export const AccountFungibleTokenList = (props) => {
           <Table>
             <TableHead
               sx={{background:'rgba(255, 255, 255, 0.1)',
-                borderColor: '#54576a',
+                borderColor: '#373737',
                 borderWidth: 1,
                 borderStyle: 'solid',
                 mt: 4
@@ -159,7 +159,7 @@ export const AccountFungibleTokenList = (props) => {
                       border: 0
                     },
                     "&:hover": {
-                      backgroundColor: "#5149e5 !important"
+                      backgroundColor: "#616161 !important"
                     },
                   }}
                 >

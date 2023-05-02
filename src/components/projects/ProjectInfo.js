@@ -10,7 +10,7 @@ export const ProjectInfo = (props) => {
         <Grid item xs={12} md={4}>
           <Card
             sx={{background:'rgba(255, 255, 255, 0.1)',
-              borderColor: '#54576a',
+              borderColor: '#373737',
               borderWidth: 1,
               borderStyle: 'solid'
             }}
@@ -37,7 +37,7 @@ export const ProjectInfo = (props) => {
         <Grid item xs={12} md={4}>
           <Card
             sx={{background:'rgba(255, 255, 255, 0.1)',
-              borderColor: '#54576a',
+              borderColor: '#373737',
               borderWidth: 1,
               borderStyle: 'solid'
             }}
@@ -61,7 +61,7 @@ export const ProjectInfo = (props) => {
         <Grid item xs={12} md={4}>
           <Card
             sx={{background:'rgba(255, 255, 255, 0.1)',
-              borderColor: '#54576a',
+              borderColor: '#373737',
               borderWidth: 1,
               borderStyle: 'solid'
             }}

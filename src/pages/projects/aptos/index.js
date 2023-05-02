@@ -82,9 +82,10 @@ const Projects = () => {
     >
       <Container sx={{mb: 4}}>
         <Typography variant={"h4"} style={{
-          background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent"
+          // background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
+          // WebkitBackgroundClip: "text",
+          // WebkitTextFillColor: "transparent"
+          color: "white"
         }}>
           Ecosystem Projects
         </Typography>
@@ -92,7 +93,7 @@ const Projects = () => {
         <Card
           sx={{
             background: 'rgba(255, 255, 255, 0.1)',
-            borderColor: '#54576a',
+            borderColor: '#373737',
             borderWidth: 1,
             borderStyle: 'solid',
             mt: 4
@@ -111,7 +112,7 @@ const Projects = () => {
             <Table sx={{border: "0.5px solid #dadada"}}>
               <TableHead
                 sx={{background:'rgba(255, 255, 255, 0.1)',
-                  borderColor: '#54576a',
+                  borderColor: '#373737',
                   borderWidth: 1,
                   borderStyle: 'solid',
                   mt: 4
@@ -155,7 +156,7 @@ const Projects = () => {
               <TableBody
                 sx={{
                   background:'transparent',
-                  borderColor: '#54576a',
+                  borderColor: '#373737',
                   borderWidth: 1,
                   borderStyle: 'solid',
                   mt: 4,
@@ -168,7 +169,7 @@ const Projects = () => {
                         key={index}
                         sx={{
                           "&:hover": {
-                            backgroundColor: "#5149e5 !important"
+                            backgroundColor: "#616161 !important"
                           },
                         }}
                       >

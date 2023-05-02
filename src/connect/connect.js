@@ -35,6 +35,7 @@ export const Connect = () => {
             ml: 2
         }}>
         <Button
+          color={"secondary"}
           size={"small"}
           variant="contained"
           onClick={() => handleOpenAuth()}
@@ -52,6 +53,7 @@ export const Connect = () => {
           ml: 2
         }}>
         <Button
+          color={"secondary"}
           size={"small"}
           variant="contained"
           onClick={() => handleSignOut()}

@@ -29,7 +29,7 @@ import {styled} from "@mui/material/styles";
 const CssTextField = styled(TextField)(({theme}) => ({
   '& .MuiOutlinedInput-root': {
     '&:hover fieldset': {
-      borderColor: theme.palette.primary.main,
+      borderColor: theme.palette.secondary.main,
     },
   },
 }))
@@ -195,9 +195,10 @@ const Dashboard = () => {
               <Stack direction={"row"} alignItems="center" justifyContent="space-between">
                 <Typography variant="h4"
                             style={{
-                              background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
-                              WebkitBackgroundClip: "text",
-                              WebkitTextFillColor: "transparent"
+                              color: "white"
+                              // background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
+                              // WebkitBackgroundClip: "text",
+                              // WebkitTextFillColor: "transparent"
                             }}
                 >
                   Account Dashboard
@@ -218,7 +219,7 @@ const Dashboard = () => {
                         </InputAdornment>
                       ),
                     }}
-                    // color="secondary"
+                    color="secondary"
                     placeholder={smUp ? "Your wallet address" : "Wallet address"}
                     sx={{
                       '& .MuiInputBase-root': {

@@ -137,7 +137,7 @@ const ContentShareButton = () => {
   return (
     <>
       <Button variant="contained" startIcon={<Share />} sx={{borderRadius:4, color:"white"}}
-              color="primary"
+              color="secondary"
               onClick={handleOpenSearchDialog}>
         Share
       </Button>
@@ -207,6 +207,7 @@ const CompanySummary = ({links}) => {
           sx={{marginBottom:4}}
         >
           <Button
+            color={"secondary"}
             startIcon={<CallMade />}
             sx={{borderRadius:4}}
             variant="contained"
@@ -359,9 +360,10 @@ const CompanyDetails = () => {
               </Box>
               <Typography variant="h4"
                           style={{
-                            background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
-                            WebkitBackgroundClip: "text",
-                            WebkitTextFillColor: "transparent"
+                            color: "white"
+                            // background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
+                            // WebkitBackgroundClip: "text",
+                            // WebkitTextFillColor: "transparent"
                           }}
               >
                 Project Information

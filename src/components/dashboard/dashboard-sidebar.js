@@ -55,12 +55,12 @@ const getSections = (t, chain) => {
               path: '/projects/' + chainName,
               icon: <ReportIcon fontSize="small"/>
             },
-            {
-              title: t('Staking'),
-              path: '/staking',
-              icon: <UsersIcon fontSize="small"/>,
-              disabled: true
-            }
+            // {
+            //   title: t('Staking'),
+            //   path: '/staking',
+            //   icon: <UsersIcon fontSize="small"/>,
+            //   disabled: true
+            // }
           ]
         }
       ];
@@ -79,11 +79,11 @@ const getSections = (t, chain) => {
               path: '/projects/' + chainName,
               icon: <ReportIcon fontSize="small"/>
             },
-            {
-              title: t('Staking'),
-              path: '/staking',
-              icon: <UsersIcon fontSize="small"/>
-            }
+            // {
+            //   title: t('Staking'),
+            //   path: '/staking',
+            //   icon: <UsersIcon fontSize="small"/>
+            // }
           ]
         },
         {
@@ -102,6 +102,11 @@ const getSections = (t, chain) => {
             {
               title: t('Multi Sender'),
               path: 'https://btc.stx-multisender.com',
+              icon: <ExternalLink fontSize="small"/>
+            },
+            {
+              title: t('Xverse Stacking Pool'),
+              path: 'https://pool.xverse.app/stacking',
               icon: <ExternalLink fontSize="small"/>
             }
           ]
@@ -231,7 +236,7 @@ export const DashboardSidebar = (props) => {
           </div>
           <Divider
             sx={{
-              borderColor: '#2D3748',
+              borderColor: '#373737',
               my: 3
             }}
           />
@@ -250,7 +255,7 @@ export const DashboardSidebar = (props) => {
             ))}
             <Divider
               sx={{
-                borderColor: '#2D3748'  // dark divider
+                borderColor: '#373737'  // dark divider
               }}
             />
             <Box sx={{ flexGrow: 1, p: 2 }}>
@@ -260,7 +265,7 @@ export const DashboardSidebar = (props) => {
               >
                 <Link target="_blank">
                   <Button
-                    color="primary"
+                    color="secondary"
                     component="a"
                     fullWidth
                     sx={{ mt: 2 }}
@@ -285,7 +290,7 @@ export const DashboardSidebar = (props) => {
     return (
       <Box sx={{
         minWidth: 280,
-        borderRightColor: '#2d3748',
+        borderRightColor: '#373737',
         borderRightStyle: 'solid',
         borderRightWidth: 1,
       }}>

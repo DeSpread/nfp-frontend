@@ -30,7 +30,7 @@ export const ContentShareDialog = (props) => {
       PaperProps={{
         style: { borderRadius: 8,
           borderWidth: 1,
-          borderColor: '#5c6182',
+          borderColor: '#616161',
           borderStyle: 'solid',
         }
       }}
@@ -42,14 +42,14 @@ export const ContentShareDialog = (props) => {
           justifyContent: 'space-between',
           px: 3,
           py: 2,
-          background:'#253165',
+          background:'#313131',
           borderWidth: 0,
           borderBottomWidth: 1,
-          borderColor: '#5c6182',
+          borderColor: '#616161',
           borderStyle: 'solid',
         }}
       >
-        <Typography variant="h6" sx={{color:"#979cb5"}}>
+        <Typography variant="h6" sx={{color:"white"}}>
           Share
         </Typography>
         <IconButton
@@ -59,7 +59,7 @@ export const ContentShareDialog = (props) => {
           <XIcon fontSize="small" sx={{color:"#979cb5"}}/>
         </IconButton>
       </Box>
-      <DialogContent sx={{backgroundColor: "#253165"
+      <DialogContent sx={{backgroundColor: "#313131"
       }}>
         <Stack direction="row" spacing={2} justifyContent="center"
                alignItems="center">

@@ -4,9 +4,10 @@ export const ProjectTitle = () => {
   return (
     <>
       <Typography variant={"h4"} style={{
-        background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent"
+        // background: "-webkit-linear-gradient(45deg, #e9e1fe 30%, #e3eafc 90%)",
+        // WebkitBackgroundClip: "text",
+        // WebkitTextFillColor: "transparent"
+        color: "white"
       }}>
         Ecosystem Projects
       </Typography>
