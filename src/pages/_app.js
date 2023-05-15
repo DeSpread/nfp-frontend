@@ -21,6 +21,7 @@ import {createEmotionCache} from '../utils/create-emotion-cache';
 import './global.css';
 import '../i18n';
 import initGA from '../ga';
+import Script from "next/script";
 
 Router.events.on('routeChangeStart', nProgress.start);
 Router.events.on('routeChangeError', nProgress.done);
@@ -49,6 +50,10 @@ const App = (props) => {
           content="initial-scale=1, width=device-width"
         />
       </Head>
+      <Script
+        src={`https://telegram.org/js/telegram-widget.js?22`}
+        async
+      />
       <ReduxProvider store={store}>
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <AuthProvider>
