@@ -260,42 +260,42 @@ export const DashboardSidebar = (props) => {
               }}
             />
             <Box sx={{ flexGrow: 1, p: 2 }}>
-              <Button
-                color="secondary"
-                component="a"
-                fullWidth
-                sx={{ mt: 2 }}
-                variant="contained"
-                onClick={(e)=>{
-                  window.Telegram.Login.auth(
-                    {
-                      bot_id: 6134966895,
-                      request_access: true,
-                    },
-                    (data) => {
-                      console.log(data);
-                    }
-                  );
-                }}
-              >
-                {t('Twitter')}
-              </Button>
-              {/*<NextLink*/}
-              {/*  href={appConfig.twitterLinkOfDeSpread}*/}
-              {/*  passHref*/}
+              {/*<Button*/}
+              {/*  color="secondary"*/}
+              {/*  component="a"*/}
+              {/*  fullWidth*/}
+              {/*  sx={{ mt: 2 }}*/}
+              {/*  variant="contained"*/}
+              {/*  onClick={(e)=>{*/}
+              {/*    window.Telegram.Login.auth(*/}
+              {/*      {*/}
+              {/*        bot_id: 6134966895,*/}
+              {/*        request_access: true,*/}
+              {/*      },*/}
+              {/*      (data) => {*/}
+              {/*        console.log(data);*/}
+              {/*      }*/}
+              {/*    );*/}
+              {/*  }}*/}
               {/*>*/}
-              {/*  <Link target="_blank">*/}
-              {/*    <Button*/}
-              {/*      color="secondary"*/}
-              {/*      component="a"*/}
-              {/*      fullWidth*/}
-              {/*      sx={{ mt: 2 }}*/}
-              {/*      variant="contained"*/}
-              {/*    >*/}
-              {/*      {t('Twitter')}*/}
-              {/*    </Button>*/}
-              {/*  </Link>*/}
-              {/*</NextLink>*/}
+              {/*  {t('Twitter')}*/}
+              {/*</Button>*/}
+              <NextLink
+                href={appConfig.twitterLinkOfDeSpread}
+                passHref
+              >
+                <Link target="_blank">
+                  <Button
+                    color="secondary"
+                    component="a"
+                    fullWidth
+                    sx={{ mt: 2 }}
+                    variant="contained"
+                  >
+                    {t('Twitter')}
+                  </Button>
+                </Link>
+              </NextLink>
             </Box>
           </Box>
         </Box>
